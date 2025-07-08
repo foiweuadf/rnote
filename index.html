@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>My Notes</h2>
+  <div class="input-group">
+    <label for="noteTitleInput">Title (Optional):</label>
+    <input type="text" id="noteTitleInput" placeholder="Enter note title">
+  </div>
+  <div class="input-group">
+    <label for="noteContentInput">Content:</label>
+    <textarea id="noteContentInput" placeholder="Enter note content"></textarea>
+  </div>
+  <button id="addNoteButton">Add Note</button>
+  <button id="viewNotesButton">View All Notes</button>
+  <div id="noteList"></div>
+
+  <div id="loadingOverlay" class="hidden">
+    <div class="spinner"></div>
+    <p>Loading...</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
