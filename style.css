@@ -9,6 +9,23 @@ body {
   position: relative; /* Needed for absolute positioning of overlay */
 }
 
+@media (max-width: 600px) {
+  body {
+    width: auto;
+    margin: 10px;
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .input-group input[type="text"],
+  .input-group textarea {
+    width: calc(100% - 20px);
+  }
+}
+
 h2 {
   text-align: center;
   color: #333;
